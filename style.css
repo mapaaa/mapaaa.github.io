@@ -1,0 +1,120 @@
+* {
+  margin:0px;
+  padding:0px;
+}
+
+body {
+  font-size:1em;
+  font-family:Verdana, sans-serif;
+  min-height:100%;
+}
+
+header {
+  background: url(assets/bucharest-header.jpg);
+  height:50vh;
+  background:cover;
+  padding-top:2%;
+  padding-right:2%;
+  padding-left:2%;
+}
+
+h1.title {
+  color:white;
+  padding:2%;
+}
+
+nav {
+  width:100%;
+  font-size:1em;
+}
+
+footer {
+  float:bottom;
+  left:0;
+  bottom:0;
+  width:100%;
+}
+
+aside {
+  float:right;
+}
+
+main{
+  padding-left:5%;
+  padding-right:5%;
+  padding-top:50px;
+}
+
+ul.menu, ul.submenu {
+  margin:0px;
+  padding:0px;
+  text-indent:0px;
+}
+
+ul.menu>li , ul.menu>li>ul.submenu>li{
+  display:block;
+
+  height:2em;
+  text-align:center;
+  line-height:2em;
+  list-style-type:none;
+  overflow:hidden;
+  padding:0px;
+  margin:0px;
+}
+
+ul.menu>li {
+  float:left;
+  width:20%;
+}
+
+ul.menu>li:nth-of-type(even) a{
+  background-color:#2196f3;
+}
+
+ul.menu>li:nth-of-type(odd) a{
+  background-color:#1976d2;
+}
+
+ul.submenu>li {
+  width:100%;
+}
+
+ul.menu>li>a, ul.submenu>li>a {
+  display:block;
+  height:100%;
+  text-decoration:none;
+  color:white;
+}
+
+ul.menu>li>ul.submenu {
+  position:relative;
+  top:0px;
+}
+
+ul.menu>li>ul.submenu>li {
+  border-top:1px solid white;
+}
+
+ul.menu>li:hover{
+  overflow:visible;
+}
+
+ul.menu>li>a:hover, ul.submenu>li>a:hover {
+  background:#82b1ff;
+}
+
+section>h2 {
+  color:#1976d2;
+}
+
+#news, #activities {
+  border:1.5px solid #795548;
+  margin:15px;
+  padding:1%;
+}
+
+ul.container>li {
+ list-style-type:none;
+}
+
