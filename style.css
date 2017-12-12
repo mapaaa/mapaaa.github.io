@@ -12,10 +12,10 @@ body {
 header {
   background: url(assets/bucharest-header.jpg);
   height:50vh;
-  background:cover;
   padding-top:2%;
   padding-right:2%;
   padding-left:2%;
+  margin-bottom:5%;
 }
 
 h1.title {
@@ -42,7 +42,6 @@ aside {
 main{
   padding-left:5%;
   padding-right:5%;
-  padding-top:50px;
 }
 
 ul.menu, ul.submenu {
@@ -93,7 +92,7 @@ ul.menu>li>ul.submenu {
 }
 
 ul.menu>li>ul.submenu>li {
-  border-top:1px solid white;
+  border-top:0.2em solid white;
 }
 
 ul.menu>li:hover{
@@ -109,8 +108,7 @@ section>h2 {
 }
 
 #news, #activities {
-  border:1.5px solid #795548;
-  margin:15px;
+  border:0.1em solid #795548;
   padding:2%;
 }
 
