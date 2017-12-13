@@ -241,6 +241,10 @@ span.odd {
   -o-transform:rotate(-20deg);
 }
 
+section.atraction>h2 {
+  text-align:center;
+}
+
 span.even {
   display:inline-block;
   color:#1976d2;
@@ -250,4 +254,22 @@ span.even {
   -webkit-transform:rotate(20deg);
   -moz-transform:rotate(20deg);
   -o-transform:rotate(20deg);
+}
+
+table {
+  border-spacing:1.5em;
+}
+
+td {
+  width:33%;
+  height:10em;
+}
+
+img.picture {
+  height:15em;
+  width:100%;
+}
+
+tr {
+  width:100%;
 }
