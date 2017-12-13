@@ -6,7 +6,7 @@
 
     <meta name="description" content="Site turisitic al orasului Bucuresti ce prezinta principalele
     atractii turistice; Discover the best toursit attractions in Bucharest.">
-    <meta keywords="bucuresti, bucharest, romania, capitala romaniei, turism, tourism, travel,
+    <meta name="keywords" content="bucuresti, bucharest, romania, capitala romaniei, turism, tourism, travel,
     calatorie, atractii turistice, obiective turistice, ghid, planificare, planifica, plan,
     centru vechi, oldtown, istorie, monumente istorice, parcuri, lacuri">
 
@@ -16,16 +16,16 @@
 
   <body>
     <header>
-      <h1>Bucuresti</h1>
+      <h1 class="title">Bucuresti</h1>
       <nav class="wrapper">
         <ul class="menu">
           <li><a href="index.html">Prima pagina</a></li>
           <li>
             <a href="#">Atractii turistice</a>
             <ul class="submenu">
-              <li><a href="atractii.html">Obiective culturale</a></li>
-              <li><a href="atractii.html">Arhitectura in Bucuresti</a></li>
-              <li><a href="atractii.html">Activitati in aer liber</a></li>
+              <li><a href="atractii.html#culture">Obiective culturale</a></li>
+              <li><a href="atractii.html#arhitecture">Arhitectura in Bucuresti</a></li>
+              <li><a href="atractii.html#activities">Activitati in aer liber</a></li>
             </ul>
           </li>
           <li><a href="events.html">Evenimente</a></li>
@@ -36,7 +36,7 @@
     </header>
 
     <main>
-      <section class="mainsection atraction">
+      <section class="mainsection atraction" id="culture">
         <h2>Obiective culturale</h2>
         <table>
           <tr>
@@ -53,7 +53,7 @@
         </table>  
       </section>
 
-      <section class="mainsection atraction">
+      <section class="mainsection atraction" id="arhitecture">
         <h2>Arhitectura in Bucuresti</h2>
         <table>
           <tr>
@@ -70,7 +70,7 @@
         </table>  
       </section>
 
-      <section class="mainsection atraction">
+      <section class="mainsection atraction" id="activities">
         <h2>Activitati in aer liber</h2>
         <table>
           <tr>
