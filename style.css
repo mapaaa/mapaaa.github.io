@@ -139,6 +139,16 @@ section>h2, label, form>h2{
   font-weight:bold;
 }
 
+article.transport {
+  margin-top:2em;
+}
+
+abbr {
+  font-weight:bold;
+  font-style:italic;
+  text-decoration:none;
+}
+
 section.mainsection {
   border:0.1em solid #795548;
   padding:2%;
