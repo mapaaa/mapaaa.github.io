@@ -134,13 +134,13 @@ ul.menu>li>a:hover, ul.submenu>li>a:hover {
   background:#82b1ff;
 }
 
-section>h2, label, form>h2{
+label, h2{
   color:#1976d2;
   font-weight:bold;
 }
 
-article.transport {
-  margin-top:2em;
+article.transport>h2 {
+  margin-bottom:1em;
 }
 
 abbr {
@@ -149,11 +149,15 @@ abbr {
   text-decoration:none;
 }
 
-section.mainsection {
+.mainsection {
   border:0.1em solid #795548;
   padding:2%;
   margin:1em 0em;
   background:white;
+}
+
+.mainsection>p { 
+  margin-top:1em;
 }
 
 img.poster {
