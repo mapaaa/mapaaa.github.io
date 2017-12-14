@@ -98,7 +98,7 @@
             <td>
               <img class="picture" src="assets/triumf.jpg" alt="Arcul de Triumf">
               <div class="card">
-                <p title="Arcul de Triumf">
+                <p>
                 Arcul de Triumf este un momnument situat in partea de nord a <strong>Bucurestiului</strong>. Acesta
                 comemoreaza victoria Romaniei in Primul Razboi Mondial.
                 </p>
@@ -113,7 +113,7 @@
             <td>
               <img class="picture" src="assets/parlament.jpg" alt="Palatul Parlamentului">
               <div class="card">
-                <p title="Palatul Parlamentului">
+                <p>
                 Palatul Parlamentului este a doua cea mai mare cladire administrativa ca suprafata
                 din lume. Are 9 nivele la suprafata si alte 9 subterane.
                 </p>
@@ -126,7 +126,7 @@
             <td>
               <img class="picture" src="assets/victoriei.jpg" alt="Calea Victoriei">
               <div class="card">
-                <p title="Calea Victoriei">
+                <p>
                 Calea Victoriei este una dintre cele mai importante artere ale capitalei si se intinde
                 din Piata Natiunilor Unite pana la Piata Victoriei. Este celebra datorita arhitecturii
                 interbelice.
@@ -147,7 +147,7 @@
             <td>
               <img class="picture" src="assets/centru.jpg" alt="Centrul vechi">
               <div class="card">
-                <p title="Centrul istoric">
+                <p>
                 Centrul istoric al <strong>Bucurestiului</strong> se afla in zona centrala a acestuia si este inscris in
                 Lista Monumentelor Istorice. El reprezinta o zona pietonala, pestrita din punct de
                 vedere arhitectural.
@@ -161,7 +161,7 @@
             <td>
               <img class="picture" src="assets/zoo.jpg" alt="Gradina Zoologica">
               <div class="card">
-                <p title="Gradina Zoologica">
+                <p>
                 Gradina Zoologica din <strong>Bucuresti</strong> expune colectii de animale vii, salbatice si 
                 exotice. Gradina Zoologica este deschisa in fiecare zi, conform unui program de 
                 vara si de iarna.
@@ -176,7 +176,7 @@
             <td>
               <img class="picture" src="assets/herastrau.jpg" alt="Parcul Herastrau">
               <div class="card">
-                <p title="Parcul Herastrau">
+                <p>
                 Parcul Herastrau este cel mai mare parc din <strong>Bucuresti</strong> aflat in partea central-nordica
                 a orasului. In mijlocul parcului se afla un lac, iar aleea ce-l inconjoara are o lungime
                 de 5.92 km.
