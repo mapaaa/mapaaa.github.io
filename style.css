@@ -3,6 +3,10 @@
   padding:0px;
 }
 
+strong {
+  font-weight:normal;
+}
+
 body {
   font-size:1em;
   font-family:Verdana, sans-serif;
