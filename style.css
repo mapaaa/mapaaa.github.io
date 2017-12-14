@@ -138,7 +138,7 @@ ul.menu>li>a:hover, ul.submenu>li>a:hover {
   background:#82b1ff;
 }
 
-label, h2{
+label, h2, table>caption{
   color:#1976d2;
   font-weight:bold;
 }
@@ -262,6 +262,10 @@ span.even {
 
 table {
   border-spacing:1.5em;
+}
+
+table>caption {
+  font-size:2em;
 }
 
 td {
