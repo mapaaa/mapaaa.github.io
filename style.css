@@ -170,7 +170,7 @@ ul.menu>li>a:hover, ul.submenu>li>a:hover {
   }
 }
 
-label, h2, table>caption{
+label, h2 {
   color:#1976d2;
   font-weight:bold;
 }
@@ -279,6 +279,7 @@ span.odd {
 
 section.atraction>h2 {
   text-align:center;
+  margin-bottom:1em;
 }
 
 span.even {
@@ -292,25 +293,34 @@ span.even {
   -o-transform:rotate(20deg);
 }
 
-table {
-  border-spacing:1.5em;
-}
-
-table>caption {
-  font-size:2em;
-}
-
-td {
+div.objective {
+  float:left;
+  box-sizing:border-box;
   width:33%;
   height:15em;
+  padding:1em;
+}
+
+@media screen and (min-width:600px) and (max-width:900px) {
+  div.objective{
+    width:45%;
+  }
+}
+
+@media screen and (max-width:600px) {
+  div.objective{
+    width:95%;
+  }
+}
+
+section.atraction {
+  float:left;
 }
 
 img.picture {
-  height:15em;
-  width:100%;
-}
-
-tr {
+  height:13em;
+  box-sizing:border-box;
+  float:left;
   width:100%;
 }
 
@@ -330,12 +340,12 @@ div.card>address {
   margin-top:1em;
 }
 
-td:hover>div.card {
-  height:15em;
+div.objective:hover>div.card {
+  height:13em;
   display:block;
 }
 
-td:hover>img {
+div.objective:hover>img {
   height:0em;
   display:none;
 }
