@@ -1,6 +1,8 @@
 * {
   margin:0px;
   padding:0px;
+  border:0px;
+  outline:0px;
 }
 
 strong {
@@ -57,7 +59,7 @@ header {
   background: url(assets/bucharest-header.jpg);
   background-repeat:no-repeat;
   background-size:100%;
-  height:50vh;
+  height:40vh;
   padding-top:2%;
   padding-right:2%;
   padding-left:2%;
@@ -80,21 +82,19 @@ nav {
 }
 
 ul.menu, ul.submenu {
-  margin:0px;
-  padding:0px;
   text-indent:0px;
+  position:relative;
 }
 
 ul.menu>li , ul.menu>li>ul.submenu>li{
   display:block;
 
   height:2em;
+  font-weight:bold;
   text-align:center;
   line-height:2em;
   list-style-type:none;
   overflow:hidden;
-  padding:0px;
-  margin:0px;
 }
 
 ul.menu>li {
@@ -136,6 +136,38 @@ ul.menu>li:hover{
 
 ul.menu>li>a:hover, ul.submenu>li>a:hover {
   background:#82b1ff;
+}
+
+@media screen and (min-width:600px) and (max-width:900px) {
+  ul.menu>li{
+    width:33%;
+  }
+
+  ul.menu>li:hover ul.submenu {
+    position:absolute;
+    left:0px;
+    top:2em;
+    width:100vw;
+  }
+
+  ul.menu>li:hover ul.submenu>li {
+    float:left;
+    width:30vw;
+    border:none;
+  }
+
+  ul.menu>li:hover ul.submenu>li:nth-child(n+2) {
+    float:left;
+    width:30vw;
+    border-left:0.2em solid white;
+  }
+}
+
+@media screen and (max-width:600px) { 
+  ul.menu>li {
+    width:100%;
+    float:left;
+  }
 }
 
 label, h2, table>caption{
