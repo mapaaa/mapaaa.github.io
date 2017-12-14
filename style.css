@@ -262,7 +262,7 @@ table {
 
 td {
   width:33%;
-  height:10em;
+  height:15em;
 }
 
 img.picture {
@@ -273,3 +273,30 @@ img.picture {
 tr {
   width:100%;
 }
+
+div.card {
+  display:none;
+  box-sizing:border-box;
+  height:0em;
+  width:100%;
+  background:#424242;
+  color:white;
+  border-radius:2em;
+  padding:1em;
+  text-align:center;
+}
+
+div.card>address {
+  margin-top:1em;
+}
+
+td:hover>div.card {
+  height:15em;
+  display:block;
+}
+
+td:hover>img {
+  height:0em;
+  display:none;
+}
+
