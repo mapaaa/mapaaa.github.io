@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<settings>
+  <languages>
+    <language id="en">English</language>
+    <language id="ro">Romana</language>
+  </languages>
+  <avatars>
+    <avatar id="cat">
+      <name>cat</name>
+      <path>images/cat.png</path>
+    </avatar>
+    <avatar id="bear">
+      <name>bear</name>
+      <path>images/bear.png</path>
+    </avatar>
+    <avatar id="bunny">
+      <name>bunny</name>
+      <path>images/bunny.png</path>
+    </avatar>
+  </avatars>
+  <drinks>
+    <drink id="cola">
+      <name>cola</name>
+      <path>images/cola.png</path>
+    </drink>
+    <drink id="lemonade">
+      <name>lemonade</name>
+      <path>images/lemonade.png</path>
+    </drink>
+    <drink id="coffee">
+      <name>coffee</name>
+      <path>images/coffee.png</path>
+    </drink>
+  </drinks>
+</settings>

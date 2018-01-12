@@ -1,0 +1,186 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  height: 100%;
+}
+
+/*
+  Menu style
+ */
+
+h1 {
+  color: blue;
+  text-align: center;
+  margin: 1em 0;
+  font: 3.5em arial, sans-serif;
+}
+
+#wrapper {
+  text-align: center;
+}
+
+.menu-button {
+  background-color: green;
+  display: block;
+  width: 6em;
+  height: 3em;
+
+  margin: 1em auto;
+
+  color: whitesmoke;
+  text-align: center;
+  font-size: 2em;
+
+  border: whitesmoke double medium;
+  border-radius: 10%;
+}
+
+.menu-button:hover {
+  background-color: #004000;
+}
+
+
+.backButton {
+  position: absolute;
+  left: 3em;
+  top: 2em;
+  background-color: green;
+  width: 3em;
+  height: 3em;
+
+  color: whitesmoke;
+  text-align: center;
+  font-size: 2em;
+
+  border: whitesmoke double medium;
+  border-radius: 100%;
+}
+
+/*
+  Game style
+ */
+
+#land {
+  width: 100%;
+  height: 60vh;
+
+  background-color: green;
+}
+#border {
+  width: 100%;
+  height: 10vh;
+  background-color: gray;
+}
+
+#sidewalk {
+  width: 100%;
+  height: 30vh;
+  background-color: darkgray;
+  text-align: center;
+  position: relative;
+}
+
+#character {
+  height: 30vh;
+  margin: 0 auto;
+}
+
+.mission {
+  padding-top: 1em;
+  padding-right: 1em;
+  padding-left: 1em;
+  width: 10vw;
+  height: 20vh;
+  background-color: lightsalmon;
+  position: absolute;
+  right: 5em;
+  top: 2em;
+
+  font: 1em arial, sans-serif;
+
+  border: whitesmoke double medium;
+  border-radius: 10%;
+}
+
+.landmarkMission {
+  position: relative;
+  float: left;
+}
+
+.actionMission {
+  position: relative;
+  float: right;
+}
+
+#livesDiv {
+  background-color: firebrick;
+  height: 3em;
+  width: 3em;
+  text-align: center;
+
+  border: whitesmoke double medium;
+  border-radius: 100%;
+
+  font: 1em arial, sans-serif;
+
+  position: absolute;
+  right: 25em;
+  top: 5em;
+}
+
+
+
+/*
+  Settings
+ */
+
+label {
+  font: 1.2em arial, sans-serif;
+  margin:0 1em;
+}
+
+div.containerDiv {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+
+div.inputDiv {
+  display: block;
+  margin: 1em auto;
+}
+
+img.inputImage {
+  height: 2.5em;
+  width: 3.5em;
+}
+
+.sendButton {
+  background-color: green;
+  width: 10em;
+  height: 2em;
+
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1em;
+
+  border: whitesmoke double medium;
+  border-radius: 10%;
+}
+
+output {
+  margin-left: 1em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+div.inlineBlockDiv {
+  display: inline-block;
+
+}

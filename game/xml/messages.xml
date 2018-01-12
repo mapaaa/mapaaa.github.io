@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<lang>
+  <messages lang="ro">
+    <message id="gameTitle">Joculet!</message>
+    <message id="playButton">Joaca</message>
+    <message id="instructionsButton">Instructiuni</message>
+    <message id="settingsButton">Setari</message>
+  </messages>
+  <messages lang="eng">
+    <message id="gameTitle">A little game!</message>
+    <message id="playButton">Play</message>
+    <message id="instructionsButton">Instructions</message>
+    <message id="settingsButton">Settings</message>
+  </messages>
+
+</lang>
