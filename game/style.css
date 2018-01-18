@@ -84,7 +84,7 @@ h1 {
   position: relative;
 }
 
-#character {
+img.character {
   height: 30vh;
   margin: 0 auto;
 }

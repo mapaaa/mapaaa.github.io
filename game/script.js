@@ -48,6 +48,9 @@ function checkAndAddNewLandmark() {
           }
       });
 
+      landmark.style.borderColor = 'red';
+      landmark.style.borderWidth = '1px';
+      landmark.style.borderStyle = 'solid';
       landmarks.push(landmark);
       land.appendChild(landmark);
     }
@@ -82,7 +85,7 @@ function addMission() {
     landmark.textContent = tasks[i].landmark;
     landmark.classList.add('landmarkMission');
     var action = document.createElement('span');
-    action.textContent = tasks[i].action;
+    action.textContent = tasks[i].key;
     action.classList.add('actionMission');
 
     divTask.appendChild(landmark);
@@ -123,7 +126,11 @@ function createGameLayout() {
   divMission.appendChild(titleWrapper);
   addMission();
   document.getElementById('sidewalk').appendChild(backButton);
-  document.getElementById('sidewalk').appendChild(player.avatar);
+  var divCharacter = document.createElement('div');
+  divCharacter.appendChild(player.avatar);
+  divCharacter.id = 'character';
+  divCharacter.style.display = 'inline';
+  document.getElementById('sidewalk').appendChild(divCharacter);
 
   var livesDiv = document.createElement('div');
   livesDiv.classList.add('containerDiv');
@@ -136,22 +143,34 @@ function createGameLayout() {
   document.getElementById('sidewalk').appendChild(livesDiv);
 }
 
-function testCollision(top1, left1, h1, w1, top2, left2, h2, w2){
-  if(left1< left2+ w2 &&
-    left1+ w1> left2 &&
-    top1 < top2 + h2 &&
-    top1 + h1 > top2) {
-    return true;
-  }
+function computeOverlap(l1, r1, l2, r2) {
+  var left = Math.max(l1, l2);
+  var right = Math.min(r1, r2);
+  if (left <= right)
+    return right - left;
+  return -1;
 }
+
 
 function acceptedCollision() {
   var character = document.getElementById('character');
-  var characterStyle = getComputedStyle(character);
+  var characterRect = character.getBoundingClientRect();
   var elements = document.querySelectorAll('.landmarkDiv');
+  var currentOverlap = -1;
+  var landmark = null;
   for (var i = 0; i < elements.length; ++i) {
-    var landmarkDivStyle = getComputedStyle(elements[i]);
+    var landmarkRect = elements[i].getBoundingClientRect();
+    var type = elements[i].childNodes[0].src;
+    type = type.slice(type.lastIndexOf('/') + 1, type.lastIndexOf('.'));
+    console.log(`(${characterRect.left}, ${characterRect.right})  (${landmarkRect.left}, ${landmarkRect.right}, ${type})`);
+    var overlap = computeOverlap(characterRect.left, characterRect.right,
+                                 landmarkRect.left, landmarkRect.right);
+    if (overlap !== -1 && overlap > currentOverlap) {
+      currentOverlap = overlap;
+      landmark = elements[i];
+    }
   }
+  return landmark;
 }
 
 function gameOver() {
@@ -182,7 +201,9 @@ window.onkeydown = function(e){
     case 'v':
       var landmark = acceptedCollision();
       if (landmark !== null) {
-        if (mission.completeTask(landmark, key) === true)
+        var path = landmark.childNodes[0].src;
+        var landmarkName = path.slice(path.lastIndexOf('/') + 1, path.lastIndexOf('.'));
+        if (mission.completeTask(landmarkName, key) === true)
           break;
         else {
           decreaseNoLives();
@@ -195,7 +216,7 @@ window.onkeydown = function(e){
     case 'q':
       gameOver();
     default:
-      decreaseNoLives()
+      decreaseNoLives();
       break;
   }
 }
