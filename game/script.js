@@ -151,7 +151,6 @@ function acceptedCollision() {
   var elements = document.querySelectorAll('.landmarkDiv');
   for (var i = 0; i < elements.length; ++i) {
     var landmarkDivStyle = getComputedStyle(elements[i]);
-    if (parseInt())
   }
 }
 
