@@ -5,6 +5,7 @@
 
 body {
   height: 100%;
+  overflow: hidden;
 }
 
 /*
@@ -119,7 +120,6 @@ h1 {
   background-color: firebrick;
   height: 3em;
   width: 3em;
-  text-align: center;
 
   border: whitesmoke double medium;
   border-radius: 100%;
@@ -131,7 +131,35 @@ h1 {
   top: 5em;
 }
 
+span.centeredSpan {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  color: white;
+}
 
+.landmarkDiv {
+  position: absolute;
+  top: 5%;
+  left: 100%;
+  animation-name: landmarkAnimation;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+
+@keyframes landmarkAnimation {
+  100% {
+    left:calc(0% - 500px);
+  }
+}
+
+.landmarkImage {
+  width: 70vh;
+  height: 50vh;
+}
 
 /*
   Settings

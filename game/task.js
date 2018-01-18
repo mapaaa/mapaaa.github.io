@@ -1,7 +1,7 @@
 class Task {
-  constructor(landmark, action) {
+  constructor(landmark, key) {
     this._landmark = landmark;
-    this._action = action;
+    this._action = key;
   }
 
   get landmark() {

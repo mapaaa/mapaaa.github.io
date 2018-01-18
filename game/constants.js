@@ -7,7 +7,6 @@ constants = (function() {
   var NO_ACTIONS = 3;
   var MAX_TASKS = 3;
   var ANIMATION_SPEED = 500;
-  var SPAWN_SPEED = 1000;
   var MISSION_INTERVAL = 10000;
 
   return {
@@ -22,12 +21,6 @@ constants = (function() {
     },
     getNoActions: function() {
       return NO_ACTIONS;
-    },
-    getAnimationSpeed: function() {
-      return ANIMATION_SPEED;
-    },
-    getSpawnSpeed: function () {
-      return SPAWN_SPEED;
     },
     getMinLives:function() {
       return MIN_LIVES;

@@ -2,10 +2,10 @@ var mission = new Mission([]);
 var menuMain;
 var missionInterval;
 var noLives;
+var prefixe=["","moz","MS","o","webkit"];
 
 
-var spawner = setInterval(checkAndAddNewLandmark(), constants.getSpawnSpeed());
-var landmarks;
+var landmarks = [];
 
 
 function rand(a, b){
@@ -20,21 +20,39 @@ function createDiv(name) {
 }
 
 function checkLandmarkAppearedComplete(landmark) {
+  if (landmark.offsetLeft + landmark.offsetWidth - window.innerWidth <= -100)
+    return true;
+  return false;
 }
 
 function checkAndAddNewLandmark() {
-  /*if (landmarks.length === 0 || checkLandmarkAppearedComplete(landmarks[landmarks.length - 1]) === true) {
-    var landmarkIndex = Math.floor(Math.random() * game.getNoLandmarks());
-    var landmarksList = game.getLandmarks();
-    var landmark = document.createElement('div');
 
-    landmark.classList.add('landmark');
-    var landmarkImage = document.createElement('img');
-    landmarkImage.src = `images/${landmarksList[landmarkIndex]}.jpg`;
-    landmark.appendChild(landmarkImage);
+  var land = document.getElementById('land');
+  if (land != null) {
+    if (landmarks.length === 0 || (landmarks.length !== 0 &&
+        checkLandmarkAppearedComplete(landmarks[landmarks.length - 1]) === true)) {
+      var landmarkIndex = Math.floor(Math.random() * constants.getNoLandmarks());
+      var landmarksList = constants.getLandmarks();
+      var landmark = document.createElement('div');
 
-    landmarksList.push(new Landmark(landmarkImage, game.getAnimationSpeed()));
-  }*/
+     landmark.classList.add('landmarkDiv');
+      var landmarkImage = document.createElement('img');
+      landmarkImage.src = `images/${landmarksList[landmarkIndex]}.png`;
+      landmarkImage.classList.add('landmarkImage');
+      landmark.appendChild(landmarkImage);
+      for (var i = 0; i < prefixe.length; i++)
+        landmark.addEventListener(prefixe[i] + 'AnimationEnd', function() {
+          if (landmark.parentNode !== null) {
+            land.removeChild(landmark);
+            landmarks.slice(0, 1);
+          }
+      });
+
+      landmarks.push(landmark);
+      land.appendChild(landmark);
+    }
+  }
+  currentFrame = requestAnimationFrame(checkAndAddNewLandmark);
 }
 
 function generateMission() {
@@ -42,8 +60,8 @@ function generateMission() {
   mission.clear();
   for (var i = 0; i < noTasks; ++i) {
     var landmark = constants.getLandmarks()[rand(0, constants.getNoLandmarks())];
-    var action = constants.getActions()[rand(0, constants.getNoActions())];
-    var task = new Task(landmark, action);
+    var key = constants.getActions()[rand(0, constants.getNoActions())];
+    var task = new Task(landmark, key);
     mission.addTask(task);
   }
 }
@@ -57,7 +75,6 @@ function addMission() {
 
   var tasks = mission.tasks;
   for (var i = 0; i < tasks.length; ++i) {
-    console.log(tasks[i]);
     var divTask = document.createElement('div');
     divTask.classList.add('containerDiv');
     divTask.classList.add('inlineBlockDiv');
@@ -79,7 +96,7 @@ function changeMission() {
   addMission();
 }
 
-function createLayout() {
+function createGameLayout() {
   var playMain = document.createElement('main');
   playMain.appendChild(createDiv('land'));
   playMain.appendChild(createDiv('border'));
@@ -111,15 +128,82 @@ function createLayout() {
   var livesDiv = document.createElement('div');
   livesDiv.classList.add('containerDiv');
   livesDiv.id = 'livesDiv';
-  var noLivesSpan = document.createElement('button');
+  var noLivesSpan = document.createElement('span');
+  noLivesSpan.classList.add('centeredSpan');
+  noLivesSpan.id = 'noLivesSpan';
   noLivesSpan.textContent = noLives;
   livesDiv.appendChild(noLivesSpan);
   document.getElementById('sidewalk').appendChild(livesDiv);
 }
 
+function testCollision(top1, left1, h1, w1, top2, left2, h2, w2){
+  if(left1< left2+ w2 &&
+    left1+ w1> left2 &&
+    top1 < top2 + h2 &&
+    top1 + h1 > top2) {
+    return true;
+  }
+}
+
+function acceptedCollision() {
+  var character = document.getElementById('character');
+  var characterStyle = getComputedStyle(character);
+  var elements = document.querySelectorAll('.landmarkDiv');
+  for (var i = 0; i < elements.length; ++i) {
+    var landmarkDivStyle = getComputedStyle(elements[i]);
+    if (parseInt())
+  }
+}
+
+function gameOver() {
+  var elements = document.querySelectorAll('.landmarkDiv');
+  for (var i = 0; i < elements.length; ++i) {
+    elements[i].style.webkitAnimationPlayState = 'paused';
+    elements[i].style.mozAnimationPlayState = 'paused';
+    elements[i].style.oAnimationPlayState = 'paused';
+  }
+  if (!alert("Game Over!")) {
+    backToMainMenu();
+  }
+}
+
+function decreaseNoLives() {
+  noLives--;
+  if (noLives < 0)
+    gameOver();
+  else document.getElementById('noLivesSpan').textContent = noLives;
+}
+
+window.onkeydown = function(e){
+  var key = String.fromCharCode(e.keyCode).toLocaleLowerCase();
+  console.log(key);
+  switch(key) {
+    case 'p':
+    case 'u':
+    case 'v':
+      var landmark = acceptedCollision();
+      if (landmark !== null) {
+        if (mission.completeTask(landmark, key) === true)
+          break;
+        else {
+          decreaseNoLives();
+        }
+      }
+      else {
+        decreaseNoLives();
+      }
+      break;
+    case 'q':
+      gameOver();
+    default:
+      decreaseNoLives()
+      break;
+  }
+}
+
 function startGame() {
-  var sidewalk = document.getElementById('sidewalk');
   missionInterval = setInterval(changeMission, constants.getMissionInterval());
+  requestAnimationFrame(checkAndAddNewLandmark);
 }
 
 function playButtonClicked() {
@@ -131,7 +215,7 @@ function playButtonClicked() {
   document.body.style.padding = 0;
 
   noLives = getLocalStorage('nolives');
-  createLayout();
+  createGameLayout();
   startGame();
 }
 
