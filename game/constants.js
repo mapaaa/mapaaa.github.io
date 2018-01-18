@@ -1,8 +1,8 @@
 constants = (function() {
   var MIN_LIVES = 0;
   var MAX_LIVES = 4;
-  var NO_LANDMARKS = 3;
-  var LANDMARKS = ['museum', 'park', 'statue'];
+  var NO_LANDMARKS = 4;
+  var LANDMARKS = ['museum', 'park', 'statue', 'coffeeshop'];
   var ACTIONS = ['p', 'u', 'v'];
   var NO_ACTIONS = 3;
   var MAX_TASKS = 3;

@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bddd156-963e-417e-b32e-774a695410d1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/character.js" afterPath="$PROJECT_DIR$/character.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/constants.js" afterPath="$PROJECT_DIR$/constants.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mission.js" afterPath="$PROJECT_DIR$/mission.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script.js" afterPath="$PROJECT_DIR$/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
@@ -21,11 +20,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="172" column="13" lean-forward="false" selection-start-line="172" selection-start-column="4" selection-end-line="172" selection-end-column="13" />
+            <state relative-caret-position="309">
+              <caret line="160" column="12" lean-forward="false" selection-start-line="160" selection-start-column="12" selection-end-line="160" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/constants.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/settings.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="82" column="24" lean-forward="true" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
+              <folding>
+                <element signature="n#!!block;n#insertNameInput#0" expanded="false" />
+                <element signature="n#!!block;n#insertAvatarInput#0" expanded="false" />
+                <element signature="n#!!block;n#insertNumberOfLives#0" expanded="false" />
+                <element signature="n#!!block;n#insertLanguage#0" expanded="false" />
+                <element signature="n#!!block;n#insertFunnyMessage#0" expanded="false" />
+                <element signature="n#!!block;n#getSettings#0" expanded="false" />
+                <element signature="n#!!block;n#settingsCreateLayout#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xml/settings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -34,50 +71,46 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+            <state relative-caret-position="45">
+              <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="147" column="22" lean-forward="false" selection-start-line="147" selection-start-column="22" selection-end-line="147" selection-end-column="22" />
+            <state relative-caret-position="383">
+              <caret line="92" column="31" lean-forward="false" selection-start-line="92" selection-start-column="31" selection-end-line="92" selection-end-column="31" />
               <folding>
                 <element signature="n#!!block;n#rand#0" expanded="false" />
                 <element signature="n#!!block;n#createDiv#0" expanded="false" />
                 <element signature="n#!!block;n#checkLandmarkAppearedComplete#0" expanded="false" />
                 <element signature="e#1315#1457#0" expanded="false" />
                 <element signature="e#1361#1449#0" expanded="false" />
-                <element signature="n#!!block;n#generateMission#0" expanded="false" />
-                <element signature="e#1870#2097#0" expanded="false" />
-                <element signature="n#!!block;n#addMission#0" expanded="false" />
-                <element signature="e#2400#2923#0" expanded="false" />
                 <element signature="n#!!block;n#changeMission#0" expanded="false" />
                 <element signature="n#!!block;n#createGameLayout#0" expanded="false" />
-                <element signature="e#3450#3477#0" expanded="false" />
-                <element signature="e#5611#5680#0" expanded="false" />
+                <element signature="e#3482#3509#0" expanded="false" />
+                <element signature="e#5643#5712#0" expanded="false" />
                 <element signature="n#!!block;n#gameOver#0" expanded="false" />
-                <element signature="e#5833#6007#0" expanded="false" />
-                <element signature="e#6036#6063#0" expanded="false" />
+                <element signature="e#5865#6039#0" expanded="false" />
+                <element signature="e#6068#6095#0" expanded="false" />
                 <element signature="n#!!block;n#decreaseNoLives#0" expanded="false" />
-                <element signature="e#6246#6889#0" expanded="false" />
-                <element signature="e#6334#6887#0" expanded="false" />
-                <element signature="e#6380#6800#0" expanded="false" />
-                <element signature="e#6461#6739#0" expanded="false" />
-                <element signature="e#6691#6731#0" expanded="false" />
-                <element signature="e#6751#6787#0" expanded="false" />
-                <element signature="e#6805#6832#0" expanded="false" />
-                <element signature="e#6837#6883#0" expanded="false" />
+                <element signature="e#6278#6921#0" expanded="false" />
+                <element signature="e#6366#6919#0" expanded="false" />
+                <element signature="e#6412#6832#0" expanded="false" />
+                <element signature="e#6493#6771#0" expanded="false" />
+                <element signature="e#6723#6763#0" expanded="false" />
+                <element signature="e#6783#6819#0" expanded="false" />
+                <element signature="e#6837#6864#0" expanded="false" />
+                <element signature="e#6869#6915#0" expanded="false" />
                 <element signature="n#!!block;n#startGame#0" expanded="false" />
                 <element signature="n#!!block;n#playButtonClicked#0" expanded="false" />
                 <element signature="n#!!block;n#backToMainMenu#0" expanded="false" />
-                <element signature="e#7519#7614#0" expanded="false" />
+                <element signature="e#7551#7646#0" expanded="false" />
                 <element signature="n#!!block;n#settingsButtonClicked#0" expanded="false" />
-                <element signature="e#8315#8342#0" expanded="false" />
+                <element signature="e#8347#8374#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -86,8 +119,8 @@
       <file leaf-file-name="character.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/character.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="46" lean-forward="false" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+            <state relative-caret-position="15">
+              <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -96,8 +129,8 @@
       <file leaf-file-name="mission.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mission.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+            <state relative-caret-position="345">
+              <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -106,8 +139,8 @@
       <file leaf-file-name="task.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/task.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+            <state relative-caret-position="105">
+              <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -179,12 +212,12 @@
         <option value="$PROJECT_DIR$/storage.js" />
         <option value="$PROJECT_DIR$/settings.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/constants.js" />
-        <option value="$PROJECT_DIR$/task.js" />
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/character.js" />
-        <option value="$PROJECT_DIR$/mission.js" />
+        <option value="$PROJECT_DIR$/task.js" />
         <option value="$PROJECT_DIR$/script.js" />
+        <option value="$PROJECT_DIR$/mission.js" />
+        <option value="$PROJECT_DIR$/constants.js" />
+        <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
   </component>
@@ -202,10 +235,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="423" />
-    <option name="y" value="24" />
+    <option name="x" value="517" />
+    <option name="y" value="-3" />
     <option name="width" value="680" />
-    <option name="height" value="708" />
+    <option name="height" value="736" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -310,12 +343,12 @@
       <workItem from="1515719626344" duration="28000" />
       <workItem from="1515747997585" duration="1225000" />
       <workItem from="1516025911534" duration="19547000" />
-      <workItem from="1516288193203" duration="6401000" />
+      <workItem from="1516288193203" duration="8485000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80719000" />
+    <option name="totallyTimeSpent" value="82803000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1360" height="772" extended-state="6" />
@@ -387,32 +420,28 @@
             <element signature="n#!!block;n#checkLandmarkAppearedComplete#0" expanded="false" />
             <element signature="e#1315#1457#0" expanded="false" />
             <element signature="e#1361#1449#0" expanded="false" />
-            <element signature="n#!!block;n#generateMission#0" expanded="false" />
-            <element signature="e#1870#2097#0" expanded="false" />
-            <element signature="n#!!block;n#addMission#0" expanded="false" />
-            <element signature="e#2400#2923#0" expanded="false" />
             <element signature="n#!!block;n#changeMission#0" expanded="false" />
             <element signature="n#!!block;n#createGameLayout#0" expanded="false" />
-            <element signature="e#3450#3477#0" expanded="false" />
-            <element signature="e#5611#5680#0" expanded="false" />
+            <element signature="e#3482#3509#0" expanded="false" />
+            <element signature="e#5643#5712#0" expanded="false" />
             <element signature="n#!!block;n#gameOver#0" expanded="false" />
-            <element signature="e#5833#6007#0" expanded="false" />
-            <element signature="e#6036#6063#0" expanded="false" />
+            <element signature="e#5865#6039#0" expanded="false" />
+            <element signature="e#6068#6095#0" expanded="false" />
             <element signature="n#!!block;n#decreaseNoLives#0" expanded="false" />
-            <element signature="e#6246#6889#0" expanded="false" />
-            <element signature="e#6334#6887#0" expanded="false" />
-            <element signature="e#6380#6800#0" expanded="false" />
-            <element signature="e#6461#6739#0" expanded="false" />
-            <element signature="e#6691#6731#0" expanded="false" />
-            <element signature="e#6751#6787#0" expanded="false" />
-            <element signature="e#6805#6832#0" expanded="false" />
-            <element signature="e#6837#6883#0" expanded="false" />
+            <element signature="e#6278#6921#0" expanded="false" />
+            <element signature="e#6366#6919#0" expanded="false" />
+            <element signature="e#6412#6832#0" expanded="false" />
+            <element signature="e#6493#6771#0" expanded="false" />
+            <element signature="e#6723#6763#0" expanded="false" />
+            <element signature="e#6783#6819#0" expanded="false" />
+            <element signature="e#6837#6864#0" expanded="false" />
+            <element signature="e#6869#6915#0" expanded="false" />
             <element signature="n#!!block;n#startGame#0" expanded="false" />
             <element signature="n#!!block;n#playButtonClicked#0" expanded="false" />
             <element signature="n#!!block;n#backToMainMenu#0" expanded="false" />
-            <element signature="e#7519#7614#0" expanded="false" />
+            <element signature="e#7551#7646#0" expanded="false" />
             <element signature="n#!!block;n#settingsButtonClicked#0" expanded="false" />
-            <element signature="e#8315#8342#0" expanded="false" />
+            <element signature="e#8347#8374#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -460,32 +489,28 @@
             <element signature="n#!!block;n#checkLandmarkAppearedComplete#0" expanded="false" />
             <element signature="e#1315#1457#0" expanded="false" />
             <element signature="e#1361#1449#0" expanded="false" />
-            <element signature="n#!!block;n#generateMission#0" expanded="false" />
-            <element signature="e#1870#2097#0" expanded="false" />
-            <element signature="n#!!block;n#addMission#0" expanded="false" />
-            <element signature="e#2400#2923#0" expanded="false" />
             <element signature="n#!!block;n#changeMission#0" expanded="false" />
             <element signature="n#!!block;n#createGameLayout#0" expanded="false" />
-            <element signature="e#3450#3477#0" expanded="false" />
-            <element signature="e#5611#5680#0" expanded="false" />
+            <element signature="e#3482#3509#0" expanded="false" />
+            <element signature="e#5643#5712#0" expanded="false" />
             <element signature="n#!!block;n#gameOver#0" expanded="false" />
-            <element signature="e#5833#6007#0" expanded="false" />
-            <element signature="e#6036#6063#0" expanded="false" />
+            <element signature="e#5865#6039#0" expanded="false" />
+            <element signature="e#6068#6095#0" expanded="false" />
             <element signature="n#!!block;n#decreaseNoLives#0" expanded="false" />
-            <element signature="e#6246#6889#0" expanded="false" />
-            <element signature="e#6334#6887#0" expanded="false" />
-            <element signature="e#6380#6800#0" expanded="false" />
-            <element signature="e#6461#6739#0" expanded="false" />
-            <element signature="e#6691#6731#0" expanded="false" />
-            <element signature="e#6751#6787#0" expanded="false" />
-            <element signature="e#6805#6832#0" expanded="false" />
-            <element signature="e#6837#6883#0" expanded="false" />
+            <element signature="e#6278#6921#0" expanded="false" />
+            <element signature="e#6366#6919#0" expanded="false" />
+            <element signature="e#6412#6832#0" expanded="false" />
+            <element signature="e#6493#6771#0" expanded="false" />
+            <element signature="e#6723#6763#0" expanded="false" />
+            <element signature="e#6783#6819#0" expanded="false" />
+            <element signature="e#6837#6864#0" expanded="false" />
+            <element signature="e#6869#6915#0" expanded="false" />
             <element signature="n#!!block;n#startGame#0" expanded="false" />
             <element signature="n#!!block;n#playButtonClicked#0" expanded="false" />
             <element signature="n#!!block;n#backToMainMenu#0" expanded="false" />
-            <element signature="e#7519#7614#0" expanded="false" />
+            <element signature="e#7551#7646#0" expanded="false" />
             <element signature="n#!!block;n#settingsButtonClicked#0" expanded="false" />
-            <element signature="e#8315#8342#0" expanded="false" />
+            <element signature="e#8347#8374#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -548,32 +573,28 @@
             <element signature="n#!!block;n#checkLandmarkAppearedComplete#0" expanded="false" />
             <element signature="e#1315#1457#0" expanded="false" />
             <element signature="e#1361#1449#0" expanded="false" />
-            <element signature="n#!!block;n#generateMission#0" expanded="false" />
-            <element signature="e#1870#2097#0" expanded="false" />
-            <element signature="n#!!block;n#addMission#0" expanded="false" />
-            <element signature="e#2400#2923#0" expanded="false" />
             <element signature="n#!!block;n#changeMission#0" expanded="false" />
             <element signature="n#!!block;n#createGameLayout#0" expanded="false" />
-            <element signature="e#3450#3477#0" expanded="false" />
-            <element signature="e#5611#5680#0" expanded="false" />
+            <element signature="e#3482#3509#0" expanded="false" />
+            <element signature="e#5643#5712#0" expanded="false" />
             <element signature="n#!!block;n#gameOver#0" expanded="false" />
-            <element signature="e#5833#6007#0" expanded="false" />
-            <element signature="e#6036#6063#0" expanded="false" />
+            <element signature="e#5865#6039#0" expanded="false" />
+            <element signature="e#6068#6095#0" expanded="false" />
             <element signature="n#!!block;n#decreaseNoLives#0" expanded="false" />
-            <element signature="e#6246#6889#0" expanded="false" />
-            <element signature="e#6334#6887#0" expanded="false" />
-            <element signature="e#6380#6800#0" expanded="false" />
-            <element signature="e#6461#6739#0" expanded="false" />
-            <element signature="e#6691#6731#0" expanded="false" />
-            <element signature="e#6751#6787#0" expanded="false" />
-            <element signature="e#6805#6832#0" expanded="false" />
-            <element signature="e#6837#6883#0" expanded="false" />
+            <element signature="e#6278#6921#0" expanded="false" />
+            <element signature="e#6366#6919#0" expanded="false" />
+            <element signature="e#6412#6832#0" expanded="false" />
+            <element signature="e#6493#6771#0" expanded="false" />
+            <element signature="e#6723#6763#0" expanded="false" />
+            <element signature="e#6783#6819#0" expanded="false" />
+            <element signature="e#6837#6864#0" expanded="false" />
+            <element signature="e#6869#6915#0" expanded="false" />
             <element signature="n#!!block;n#startGame#0" expanded="false" />
             <element signature="n#!!block;n#playButtonClicked#0" expanded="false" />
             <element signature="n#!!block;n#backToMainMenu#0" expanded="false" />
-            <element signature="e#7519#7614#0" expanded="false" />
+            <element signature="e#7551#7646#0" expanded="false" />
             <element signature="n#!!block;n#settingsButtonClicked#0" expanded="false" />
-            <element signature="e#8315#8342#0" expanded="false" />
+            <element signature="e#8347#8374#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -656,14 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xml/settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.html" />
     <entry file="file://$PROJECT_DIR$/storage.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -678,6 +691,79 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="39" lean-forward="false" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/park.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="92" column="31" lean-forward="false" selection-start-line="92" selection-start-column="31" selection-end-line="92" selection-end-column="31" />
+          <folding>
+            <element signature="n#!!block;n#rand#0" expanded="false" />
+            <element signature="n#!!block;n#createDiv#0" expanded="false" />
+            <element signature="n#!!block;n#checkLandmarkAppearedComplete#0" expanded="false" />
+            <element signature="e#1315#1457#0" expanded="false" />
+            <element signature="e#1361#1449#0" expanded="false" />
+            <element signature="n#!!block;n#changeMission#0" expanded="false" />
+            <element signature="n#!!block;n#createGameLayout#0" expanded="false" />
+            <element signature="e#3482#3509#0" expanded="false" />
+            <element signature="e#5643#5712#0" expanded="false" />
+            <element signature="n#!!block;n#gameOver#0" expanded="false" />
+            <element signature="e#5865#6039#0" expanded="false" />
+            <element signature="e#6068#6095#0" expanded="false" />
+            <element signature="n#!!block;n#decreaseNoLives#0" expanded="false" />
+            <element signature="e#6278#6921#0" expanded="false" />
+            <element signature="e#6366#6919#0" expanded="false" />
+            <element signature="e#6412#6832#0" expanded="false" />
+            <element signature="e#6493#6771#0" expanded="false" />
+            <element signature="e#6723#6763#0" expanded="false" />
+            <element signature="e#6783#6819#0" expanded="false" />
+            <element signature="e#6837#6864#0" expanded="false" />
+            <element signature="e#6869#6915#0" expanded="false" />
+            <element signature="n#!!block;n#startGame#0" expanded="false" />
+            <element signature="n#!!block;n#playButtonClicked#0" expanded="false" />
+            <element signature="n#!!block;n#backToMainMenu#0" expanded="false" />
+            <element signature="e#7551#7646#0" expanded="false" />
+            <element signature="n#!!block;n#settingsButtonClicked#0" expanded="false" />
+            <element signature="e#8347#8374#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/character.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mission.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -698,96 +784,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/park.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/constants.js">
+    <entry file="file://$PROJECT_DIR$/xml/settings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="23" column="6" lean-forward="false" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="172" column="13" lean-forward="false" selection-start-line="172" selection-start-column="4" selection-end-line="172" selection-end-column="13" />
+        <state relative-caret-position="135">
+          <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        <state relative-caret-position="45">
+          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mission.js">
+    <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        <state relative-caret-position="309">
+          <caret line="160" column="12" lean-forward="false" selection-start-line="160" selection-start-column="12" selection-end-line="160" selection-end-column="12" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/character.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="46" lean-forward="false" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="147" column="22" lean-forward="false" selection-start-line="147" selection-start-column="22" selection-end-line="147" selection-end-column="22" />
-          <folding>
-            <element signature="n#!!block;n#rand#0" expanded="false" />
-            <element signature="n#!!block;n#createDiv#0" expanded="false" />
-            <element signature="n#!!block;n#checkLandmarkAppearedComplete#0" expanded="false" />
-            <element signature="e#1315#1457#0" expanded="false" />
-            <element signature="e#1361#1449#0" expanded="false" />
-            <element signature="n#!!block;n#generateMission#0" expanded="false" />
-            <element signature="e#1870#2097#0" expanded="false" />
-            <element signature="n#!!block;n#addMission#0" expanded="false" />
-            <element signature="e#2400#2923#0" expanded="false" />
-            <element signature="n#!!block;n#changeMission#0" expanded="false" />
-            <element signature="n#!!block;n#createGameLayout#0" expanded="false" />
-            <element signature="e#3450#3477#0" expanded="false" />
-            <element signature="e#5611#5680#0" expanded="false" />
-            <element signature="n#!!block;n#gameOver#0" expanded="false" />
-            <element signature="e#5833#6007#0" expanded="false" />
-            <element signature="e#6036#6063#0" expanded="false" />
-            <element signature="n#!!block;n#decreaseNoLives#0" expanded="false" />
-            <element signature="e#6246#6889#0" expanded="false" />
-            <element signature="e#6334#6887#0" expanded="false" />
-            <element signature="e#6380#6800#0" expanded="false" />
-            <element signature="e#6461#6739#0" expanded="false" />
-            <element signature="e#6691#6731#0" expanded="false" />
-            <element signature="e#6751#6787#0" expanded="false" />
-            <element signature="e#6805#6832#0" expanded="false" />
-            <element signature="e#6837#6883#0" expanded="false" />
-            <element signature="n#!!block;n#startGame#0" expanded="false" />
-            <element signature="n#!!block;n#playButtonClicked#0" expanded="false" />
-            <element signature="n#!!block;n#backToMainMenu#0" expanded="false" />
-            <element signature="e#7519#7614#0" expanded="false" />
-            <element signature="n#!!block;n#settingsButtonClicked#0" expanded="false" />
-            <element signature="e#8315#8342#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>

@@ -1,6 +1,8 @@
 class Mission {
   constructor(tasks) {
     this._tasks = tasks;
+    this._completedTask = [tasks.length, false];
+    this._cntCompleted = 0;
   }
 
   addTask(task) {
@@ -16,7 +18,15 @@ class Mission {
     var ind = this._tasks.findIndex(function(element){
       return element.landmark === landmark && element.key === key;
     });
-    return ind !== -1;
+    if (ind !== -1) {
+      if (!this._completedTask[ind]) {
+        this._completedTask[ind] = true;
+        ++this._cntCompleted;
+      }
+      this._tasks[ind].completeTask();
+      return true;
+    }
+    return false;
   }
 
   get tasks() {

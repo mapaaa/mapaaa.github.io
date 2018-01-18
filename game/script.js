@@ -90,6 +90,7 @@ function addMission() {
 
     divTask.appendChild(landmark);
     divTask.appendChild(action);
+    tasks[i].taskDiv = divTask;
     divMission.appendChild(divTask);
   }
 }
