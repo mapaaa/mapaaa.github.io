@@ -152,6 +152,7 @@ var MYGAME = {
     divMission.appendChild(titleWrapper);
     MYGAME.addMission();
     document.getElementById('sidewalk').appendChild(backButton);
+    console.log(player.avatar);
     document.getElementById('sidewalk').appendChild(player.avatar);
 
     var livesDiv = document.createElement('div');
@@ -388,17 +389,5 @@ window.onclick = function (e) {
         }
       }
     }
-  }
-};
-
-window.onload = function() {
-  if (MYGAME.currentWindow === 0) {
-    var date = document.getElementById('date');
-    var currentDate = new Date();
-    console.log(currentDate);
-    var year = currentDate.getFullYear();
-    var month = currentDate.getMonth() + 1;
-    var day = currentDate.getDate();
-    date.textContent = `${day} / ${month} / ${year}`;
   }
 };

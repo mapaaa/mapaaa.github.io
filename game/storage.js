@@ -8,6 +8,7 @@ var playerFunny;
 
 window.onload = function () {
   // Initialize or get data from local storage
+  console.log('local storage');
   if (!(player.name = localStorage.getItem('name'))) {
     player.name = 'Mia';
     localStorage.setItem('name', player.name);
@@ -37,7 +38,16 @@ window.onload = function () {
     playerFunny = 'You rock!';
     localStorage.setItem('funny', playerFunny);
   }
-}
+
+  if (MYGAME.currentWindow === 0) {
+    var date = document.getElementById('date');
+    var currentDate = new Date();
+    var year = currentDate.getFullYear();
+    var month = currentDate.getMonth() + 1;
+    var day = currentDate.getDate();
+    date.textContent = `${day} / ${month} / ${year}`;
+  }
+};
 
 function setLocalStorage(key, value) {
   localStorage.setItem(key, value);
