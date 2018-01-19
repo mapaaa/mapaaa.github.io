@@ -167,9 +167,9 @@ function getSettings(xml) {
 }
 
 function saveChanges() {
-  var r = 0;
-  var g = 0;
-  var b = 0;
+  var r = 255;
+  var g = 255;
+  var b = 255;
 
   var selectMultiple = document.querySelector('[id=cbc]');
   for (var i = 0; i < selectMultiple.options.length; ++i) {
