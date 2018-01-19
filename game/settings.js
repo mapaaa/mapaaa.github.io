@@ -91,7 +91,7 @@ function insertDrinks() {
   div.appendChild(document.createElement('br'));
 
   var localStorageDrinks = getLocalStorage('drinks');
-  console.log(localStorageDrinks);
+  //console.log(localStorageDrinks);
 
   for (var i = 0; i < drinks.length; ++i) {
     var drink = document.createElement('div');
@@ -167,6 +167,23 @@ function getSettings(xml) {
 }
 
 function saveChanges() {
+  var r = 0;
+  var g = 0;
+  var b = 0;
+
+  var selectMultiple = document.querySelector('[id=cbc]');
+  for (var i = 0; i < selectMultiple.options.length; ++i) {
+      if (selectMultiple.options[i].selected === true) {
+        switch (selectMultiple.options[i].value) {
+          case 'red': r = 255; break;
+          case 'green': g = 255; break;
+          case 'blue': b = 255; break;
+        }
+      }
+  }
+
+  document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+
   var pName = document.querySelector('#name');
   if (pName !== null) {
     if (/^([A-Z])([a-z0-9]*)$/.test(pName.value))
@@ -217,7 +234,46 @@ function saveChanges() {
   alert('Changes saved. Press Back to go to Main Menu');
 }
 
+function insertMultipleSelect() {
+  var div = document.createElement('div');
+  div.classList.add('inputDiv');
+
+  var label = document.createElement('label');
+  label.textContent = 'Change Background Color';
+  label.for = 'cbc';
+
+  var select = document.createElement('select');
+  select.multiple = true;
+  select.id = 'cbc';
+
+  var option1 = document.createElement('option');
+  option1.value = 'red';
+  option1.textContent = 'red';
+  option1.dataset.code = 'rgb(255, 0, 0)';
+
+
+  var option2 = document.createElement('option');
+  option2.value = 'green';
+  option2.textContent = 'green';
+  option2.dataset.code = 'rgb(0, 255, 0)';
+
+  var option3 = document.createElement('option');
+  option3.value = 'blue';
+  option3.textContent = 'blue';
+  option3.dataset.code = 'rgb(0, 0, 255)';
+
+  select.appendChild(option1);
+  select.appendChild(option2);
+  select.appendChild(option3);
+
+  div.appendChild(label);
+  div.appendChild(select);
+
+  return div;
+}
+
 function settingsCreateLayout() {
+
   document.body.style.paddingBottom = '5em';
   document.body.style.paddingLeft = '5em';
   document.body.style.paddingRight = '5em';
@@ -240,6 +296,7 @@ function settingsCreateLayout() {
       div.appendChild(insertDrinks()); // checkbox
       div.appendChild(insertLanguage()); // select simple
       div.appendChild(insertFunnyMessage()); // textarea
+      div.appendChild(insertMultipleSelect()); // weird background color
 
       main.appendChild(div);
       var divButton = document.createElement('div');

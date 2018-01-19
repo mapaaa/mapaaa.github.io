@@ -14,6 +14,7 @@ class Character {
     if (typeof(newAvatar) === "string") {
       this._avatar = document.createElement('img');
       this._avatar.src = newAvatar;
+      this._avatar.id = 'character';
       this._avatar.classList.add('character');
     }
     else {
