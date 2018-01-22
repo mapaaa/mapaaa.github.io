@@ -167,13 +167,15 @@ function getSettings(xml) {
 }
 
 function saveChanges() {
-  var r = 255;
-  var g = 255;
-  var b = 255;
+  var r = 0;
+  var g = 0;
+  var b = 0;
 
+  var selected = false;
   var selectMultiple = document.querySelector('[id=cbc]');
   for (var i = 0; i < selectMultiple.options.length; ++i) {
       if (selectMultiple.options[i].selected === true) {
+        selected = true;
         switch (selectMultiple.options[i].value) {
           case 'red': r = 255; break;
           case 'green': g = 255; break;
@@ -182,7 +184,15 @@ function saveChanges() {
       }
   }
 
-  document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+  console.log(selected);
+  if (!selected) {
+     r = 255;
+     g = 255;
+     b = 255;
+  }
+
+ // document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+  document.body.style.backgroundColor = 'rgb(' + r.toString() + ', ' + g.toString() + ', ' + b.toString() + ')';
 
   var pName = document.querySelector('#name');
   if (pName !== null) {
@@ -312,7 +322,7 @@ function settingsCreateLayout() {
     }
   };
   xhttp.open("GET", "xml/settings.xml", true);
-  xhttp.send();
+  xhttp.send(null);
 
 
 }
